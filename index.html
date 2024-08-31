@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo"> Generá tu contraseña</h1>
+    <h3> Indicá preferencias</h3>
+    <div class="container">
+    <h4>Cantidad de caracteres: </h4> 
+    <input class="caracteres" required id="caracteres" type="number" min="1"  placeholder="1..2..3"> <br>
+    <div class="tipoContra">
+        <h3>Seleccioná lo que quieras que incluya</h3>
+        Minusculas <input type="checkbox" name="minusculas" id="minusculas"><br>
+        Mayusculas <input type="checkbox" name="mayusculas" id="mayusculas"> <br>
+        Números <input type="checkbox" name="numeros" id="numeros"> <br> 
+        Caractéres especiales  <input type="checkbox" name="especiales" id="especiales"> <br><br> 
+        <button type="submit" id="btnGenerar">Generar contraseña</button> <br><br>
+        <button  id="limpiar">Resetear</button> <br><br>
+       
+
+        <p class="contraseñaGenerada" id="contraseñaGenerada"></p>
+    </div>
+</div>
+
+</body>
+</html>
+
+    
